@@ -1,0 +1,206 @@
+class Simple{  
+    public static void main(String args[]){  
+     System.out.println("Hello Java");  
+    }  
+}  
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner firstnumber = new Scanner(System.in);
+        System.out.println("Enter 1st number:");
+        float a = firstnumber.nextFloat();
+        Scanner secondnumber = new Scanner(System.in);
+        System.out.println("Enter 2nd number:");
+        float b = secondnumber.nextFloat();
+        if (a == b) {
+            System.out.println("a equals to b");
+        } else if (a > b) {
+            System.out.println("a is greater than b");
+        } else if (a < b) {
+            System.out.println("a is less than b");
+        } else {
+            System.out.println("error!");
+        }
+    }
+}
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner button = new Scanner(System.in);
+        System.out.println("Press button  1,2 or 3:");
+        int a = button.nextInt();
+        if (a == 1)
+            System.out.println("Salam");
+        else if (a == 2)
+            System.out.println("Hello");
+        else if (a == 3)
+            System.out.println("hey");
+        else {
+            System.out.println("error!");
+        }
+    }
+}
+import java.util.Scanner;  // Import the Scanner class
+
+class Main {
+    public static void main(String[] args) {
+        Scanner firstValue = new Scanner(System.in);
+        System.out.println("Enter 1st Value:");
+        int a = firstValue.nextInt();
+        Scanner secondValue = new Scanner(System.in);
+        System.out.println("Enter 2nd Value:");
+        int b = secondValue.nextInt();
+        Scanner operator = new Scanner(System.in);
+        System.out.println("Enter operator:");
+        char op = operator.next().charAt(0);
+        if (op == '+')
+            System.out.println(a + b);
+        else if (op == '-')
+            System.out.println(a - b);
+        else if (op == '/')
+            System.out.println(a / b);
+        else if (op == '%')
+            System.out.println(a % b);
+        else if (op == '*')
+            System.out.println(a * b);
+        else {
+            System.out.println("invalid function!");
+        }
+    }
+}
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner firstNumber = new Scanner(System.in);
+        System.out.println("Enter 1st number:");
+        float a = firstNumber.nextFloat();
+        Scanner secondNumber = new Scanner(System.in);
+        System.out.println("Enter 2nd number:");
+        float b = secondNumber.nextFloat();
+        if (a > b) {
+            System.out.println(Math.round(a));
+        } else if (b>a) {
+            System.out.println(Math.round(b));
+        }
+    }
+}
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a month 1 to 12:");
+        int a = input.nextInt();
+        System.out.println("Enter a year");
+        int b = input.nextInt();
+        if (a == 1) {
+            System.out.println("January " + b + " has 31 days.");
+        } else if (a == 2) {
+            if (b % 4 == 0) {
+                if (b % 100 == 0) {
+                    if (b % 400 == 0) {
+                        System.out.println("February " + b + " has 29 days.");
+                    } else {
+                        System.out.println("February " + b + " has 28 days.");
+                    }
+                } else {
+                    System.out.println("February " + b + " has 29 days.");
+                }
+            } else {
+                System.out.println("February " + b + " has 28 days.");
+            }
+        } else if (a == 3) {
+            System.out.println("March " + b + " has 31 days.");
+        } else if (a == 4) {
+            System.out.println("April " + b + " has 30 days.");
+        } else if (a == 5) {
+            System.out.println("May " + b + " has 31 days.");
+        } else if (a == 6) {
+            System.out.println("June " + b + " has 30 days.");
+        } else if (a == 7) {
+            System.out.println("July " + b + " has 31 days.");
+        } else if (a == 8) {
+            System.out.println("August " + b + " has 31 days.");
+        } else if (a == 9) {
+            System.out.println("September " + b + " has 30 days.");
+        } else if (a == 10) {
+            System.out.println("October " + b + " has 31 days.");
+        } else if (a == 11) {
+            System.out.println("November " + b + " has 30 days.");
+        } else if (a == 12) {
+            System.out.println("December " + b + " has 31 days.");
+        }
+    }
+}
+
+class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.print("Enter a name: ");
+            String name = scanner.nextLine();
+            System.out.println("Name : " + name);
+            if (name.equals("END")) {
+                System.out.println("I am done");
+            }
+
+        }}}
+import java.util.Scanner;
+
+class main {
+    public static void main(String[] args) {
+
+       int n = 5;
+       int number =1;
+//       outer loop
+//        i=row number
+        for (int i = 1; i<=n; i++) {
+//            inner loop
+//            j=colum number
+            for (int j = 1; j <= i; j++) {
+                System.out.print(number);
+                number++;
+                System.out.print(" ");
+            }
+
+            System.out.println();
+        }
+
+    }
+}
+import java.util.Scanner;
+
+class main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter num 1:");
+        int n= sc.nextInt();
+        System.out.println("Enter num 2:");
+        int m= sc.nextInt();
+        System.out.println("Enter operator:");
+        char operator = sc.next().charAt(0);
+        switch (operator) {
+            case '+':
+                System.out.println(n + m);
+                break;
+            case'-':
+                System.out.println(n-m);
+                break;
+            case '/':
+                System.out.println(n/m);
+                break;
+            case '*':
+                System.out.println(n*m);
+                break;
+            default:
+                System.out.println("invalid value!");
+        }
+
+
+
+
+    }
+}
